@@ -1,0 +1,182 @@
+body{
+    background-color: rgb(4, 4, 42);
+}
+table {
+    background-color: rgba(255, 255, 255, 0.199);
+    /* background-image: url(); */
+    padding: 3%;
+    border-radius: 2%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.603);
+    border: 3px solid rgba(255, 255, 255, 0.5);
+}
+form{ margin-top: 45%;}
+.submittd {
+    width: 50%;
+    height: 90%;
+}
+th{
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+}
+label {
+    color: red;
+    margin-right: 2%;
+    margin-left: -5%;
+}
+
+.inputtd {
+    padding: 2%;
+    padding-left: 5%;
+
+}
+
+input {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid white;
+    color: white;
+
+}
+
+.valuetd {
+    color: rgb(255, 255, 255);
+    font-size: 120%;
+}
+table:hover {
+    border: 3px solid white;
+    box-shadow: 1px 1px 15px white;
+    transition: all 1s;
+}
+::placeholder {
+    color: rgba(255, 255, 255, 0.815);
+
+}
+.submitdiv {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* height:100vh; */
+    margin-top: 15%;
+}
+
+.submit {
+    border: none;
+    font-size: 20px;
+    height: 50px;
+    width: 180px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    background-color: #ffffff54;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px black;
+    border: 2px solid rgba(255, 255, 255, 0.205);
+    font-weight: 600;
+}
+
+.submit:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    transition: all 1s;
+}
+
+.submit:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    transition: all 1s;
+
+}
+
+.submit:hover:before {
+    left: 0;
+}
+
+.submit:hover:after {
+    right: 0;
+
+}
+
+.submitspan:before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    right: 0%;
+    width: 4px;
+    height: 100%;
+    background-color: white;
+    transition: all 1s;
+}
+
+.submit:hover .submitspan:before {
+    top: 0;
+}
+
+.submit:after {
+    content: '';
+    position: absolute;
+    bottom: -100%;
+    left: 0%;
+    width: 4px;
+    height: 100%;
+    background-color: white;
+    transition: all 1s;
+}
+
+.submit:hover .submitspan:after {
+    bottom: 0;
+}
+
+.submit:hover {
+    font-weight: 600;
+    box-shadow: 1px 1px 10px white;
+    color: white;
+    transition: all 1.7s;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+.btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid rgb(6, 6, 97);
+    outline: none;
+    transition: 1s ease-in-out;
+    margin-top: 18.5%;
+  }
+  
+  svg {
+    position: absolute;
+    left: 41.5%;
+    top: 40%;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+  }
+  
+  .btn:hover {
+    transition: 1s ease-in-out;
+    background: rgb(45, 45, 107);
+  }
+  
+  .btn:hover svg {
+    stroke-dashoffset: -480;
+  }
+  
+  .btn span {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+  }

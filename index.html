@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <center>
+        <button class="btn">
+            <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+              <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+              <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+            </svg>
+            <span>ADD FORM</span>
+          </button>
+        <form name="myform" class="myForm" method="get" >
+
+            <table>
+                <tr>
+                    <td class="valuetd"><label>*</label>Name :</td>
+                    <td class="inputtd">
+                        <input
+                            style=" box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.712); padding: 1.5%; letter-spacing: 1px; background-color: rgba(255, 255, 255, 0); border: 1px solid white;"
+                            type="text" name="FName" id="Fname" placeholder="FName">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="valuetd"></td>
+                    <td class="inputtd">
+                        <input type="text"
+                            style=" box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.712); padding: 1.5%; letter-spacing: 1px;"
+                            name="LName" id="Lname" placeholder="LName">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="valuetd"><label>*</label>Email :</td>
+                    <td class="inputtd">
+
+                        <input type="email"
+                            style=" box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.712); padding: 1.5%; letter-spacing: 1px;"
+                           name="" id="email" placeholder="Email">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="valuetd"><label>*</label>Phone No :</td>
+                    <td class="inputtd">
+
+                        <input type="number"
+                            style=" box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.712); padding: 1.5%; letter-spacing: 1px;"
+                            maxlength="10" name="" id="number" placeholder="Number">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="valuetd"><label>*</label>Birthdate :</td>
+                    <td class="inputtd">
+
+                        <input type="date"
+                            style=" box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.712); padding: 1.5%; letter-spacing: 1px;"
+                            name="" id="Birthdate" placeholder="Birthdate">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="valuetd"><label>*</label>Appointment Time :</td>
+                    <td class="inputtd">
+
+                        <input type="time"
+                            style=" box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.712); padding: 1.5%; letter-spacing: 1px;"
+                            name="" id="Appointment_time">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="valuetd"><label>*</label>Favorite color :</td>
+                    <td class="inputtd">
+                        <input type="color" id="favcolor" >
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="valuetd"><label>*</label>Payment Mathod :</td>
+                    <td class="inputtd" style="color: white; ">
+                        <input type="radio" name="Payment Mathod" value="cash" class="PaymentMathod">Cash
+                        <input type="radio" name="Payment Mathod" value="online" class="PaymentMathod">Online
+                        <input type="radio" name="Payment Mathod" value="card" class="PaymentMathod">Card
+                    </td>
+                </tr>
+                <tr>
+                    <td class="valuetd"><label>*</label>Age : </td>
+                    <td class="inputtd" style="color: white;">
+                        1
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        100<br>
+                        <input type="range" name="" id="Age">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="valuetd"><label>*</label>Upload file : </td>
+                    <td class="inputtd">
+                        <input type="file" style="border: none;  " name="" id="file">
+                    </td>
+                </tr>
+                <tr>
+                    
+                    <td class="inputtd">
+                        
+                    </td>
+                    <td class="valuetd">
+                        <input type="checkbox" name="" value="Yes" id="checkbox" required>
+                        accept Term & conditions </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="submittd">
+                        <div class="submitdiv">
+                            <button class="submit" onclick="store()">
+                                Submit
+                                <span class="submitspan"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <table style="margin: 10px;">
+            <tr>
+                <th>F.Name</th>
+                <th>L.Name</th>
+                <th>Email</th>
+                <th>Phone no.</th>
+                <th>DOB</th>
+                <th>Time</th>
+                <th>Fav.Color</th>
+                <th>Payment</th>
+                <th>Age</th>
+                <th>Upload File</th>
+            </tr>
+            <tr>
+                <th class="fnm"></th>
+            </tr>
+        </table>
+    </center>
+    <script src="script.js"></script>
+</body>
+
+</html>
